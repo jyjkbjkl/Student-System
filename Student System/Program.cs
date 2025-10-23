@@ -1,12 +1,13 @@
-﻿// File: Program.cs (Console Application)
+﻿
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using P01_StudentSystem.Data;
 using P01_StudentSystem.Models;
-using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace P01_StudentSystem
+
+
+namespace UseInMemoryDatabase
 {
     class Program
     {
@@ -26,10 +27,7 @@ namespace P01_StudentSystem
     }
 }
 
-// File: Models/Student.cs
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+
 
 namespace P01_StudentSystem.Models
 {
@@ -52,10 +50,7 @@ namespace P01_StudentSystem.Models
     }
 }
 
-// File: Models/Course.cs
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+
 
 namespace P01_StudentSystem.Models
 {
@@ -80,8 +75,6 @@ namespace P01_StudentSystem.Models
     }
 }
 
-// File: Models/Resource.cs
-using System.ComponentModel.DataAnnotations;
 
 namespace P01_StudentSystem.Models
 {
@@ -101,8 +94,7 @@ namespace P01_StudentSystem.Models
     }
 }
 
-// File: Models/Homework.cs
-using System;
+
 
 namespace P01_StudentSystem.Models
 {
@@ -156,9 +148,7 @@ namespace P01_StudentSystem.Models
     }
 }
 
-// File: Data/StudentSystemContext.cs
-using Microsoft.EntityFrameworkCore;
-using P01_StudentSystem.Models;
+
 
 namespace P01_StudentSystem.Data
 {
@@ -183,9 +173,7 @@ namespace P01_StudentSystem.Data
     }
 }
 
-// File: Data/DbSeeder.cs
-using System;
-using P01_StudentSystem.Models;
+
 
 namespace P01_StudentSystem.Data
 {
